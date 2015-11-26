@@ -35,7 +35,6 @@
         make.edges.equalTo(oneView).insets(UIEdgeInsetsMake(10, 10, 10, 10));
     }];
     
-    NSLog(@"亚辉同志");
 }
 
 @end
