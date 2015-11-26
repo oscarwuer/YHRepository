@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Masonry.h>
 
 @interface ViewController ()
 
@@ -17,17 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"Just test");
+    UIView *oneView = [UIView new];
+    oneView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
+    [self.view addSubview:oneView];
     
-    NSLog(@"another");
+    [oneView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.mas_equalTo(CGSizeMake(200, 200));
+    }];
     
-    NSLog(@"benbenlover");
+    UIView *twoView = [UIView new];
+    twoView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
+    [oneView addSubview:twoView];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [twoView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(oneView).insets(UIEdgeInsetsMake(10, 10, 10, 10));
+    }];
+    
 }
 
 @end
