@@ -27,6 +27,11 @@
         make.size.mas_equalTo(CGSizeMake(200, 200));
     }];
     
+    
+    
+    NSLog(@"sdf");
+    
+    
     UIView *twoView = [UIView new];
     twoView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
     [oneView addSubview:twoView];
