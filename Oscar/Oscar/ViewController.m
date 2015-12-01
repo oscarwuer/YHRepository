@@ -29,7 +29,7 @@
     
     
     
-    NSLog(@"sdf");
+    NSLog(@"sdfsdf");
     
     
     UIView *twoView = [UIView new];
