@@ -10,7 +10,14 @@
 #define Oscar_PrefixHeader_pch
 
 
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#pragma mark - 宏定义
+#import "Macro.h"
+
+/// Nimbus 相关
+#import <NimbusCore.h>
+
+/// 自动布局 masonry
+#import <Masonry.h>
+
 
 #endif /* Oscar_PrefixHeader_pch */

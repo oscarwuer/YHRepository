@@ -29,10 +29,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RDVTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>123F0508F54B0D826269C19576BE6114</key>
+		<key>2139657AA190BC1561D2D141EF914F3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DDBD32F713995FA39662D08EE2F9EBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CED6FC37959116F9D4DC9E1AADCDC32B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -72,14 +72,20 @@ PODS:
     - Nimbus/Core
   - Nimbus/WebController (1.3.0):
     - Nimbus/Core
+  - RDVTabBarController (1.1.9)
+  - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
   - Masonry
   - Nimbus
+  - RDVTabBarController (~> 1.1.9)
+  - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   Nimbus: e7f33bc6d6cb4fe5ea0aee0c7e0883696123422c
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
 COCOAPODS: 0.39.0

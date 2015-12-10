@@ -6,8 +6,9 @@
 //  Copyright © 2015年 yahui.zhang. All rights reserved.
 //
 
-#import "YHBaseViewController.h"
+#import <RDVTabBarController.h>
+#import "YHBaseNimbusTableViewController.h"
 
-@interface YHHomeViewController : YHBaseViewController
+@interface YHHomeViewController : RDVTabBarController
 
 @end

@@ -16,11 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupViewControllers];
+    [self setupTabbar];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+/// initialize viewControllers
+- (void)setupViewControllers
+{
+    YHBaseTableViewController *vc1 = [[YHBaseTableViewController alloc] init];
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+    self.viewControllers = @[nav1];
+    
+}
+
+/// initialize tabbar
+- (void)setupTabbar
+{
+    
 }
 
 @end

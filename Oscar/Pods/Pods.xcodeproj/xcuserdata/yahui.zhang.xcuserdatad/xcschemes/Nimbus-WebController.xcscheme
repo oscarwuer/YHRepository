@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7F674B398D9E1EF1A6237A21'
+               BlueprintIdentifier = '39D149DA5C514D4F5D0AE8F2'
                BlueprintName = 'Nimbus-WebController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WebController.bundle'>

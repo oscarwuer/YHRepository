@@ -11,8 +11,11 @@
 		771424621BFE246E007002B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424611BFE246E007002B4 /* main.m */; };
 		771424651BFE246E007002B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424641BFE246E007002B4 /* AppDelegate.m */; };
 		7714246D1BFE246E007002B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714246C1BFE246E007002B4 /* Assets.xcassets */; };
+		779E58E01C19516800092118 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E58DD1C19516800092118 /* YHBaseViewController.m */; };
+		779E58E61C1953CD00092118 /* YHBaseNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E58E31C1953CD00092118 /* YHBaseNimbusTableViewController.m */; };
+		779E58E71C1953CD00092118 /* YHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E58E51C1953CD00092118 /* YHBaseTableViewController.m */; };
+		779E58EB1C1954E400092118 /* YHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E58EA1C1954E400092118 /* YHBaseTableViewCell.m */; };
 		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
-		77A64E0F1C192C93004A82F3 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A64E0E1C192C93004A82F3 /* YHBaseViewController.m */; };
 		77A64E131C192CC3004A82F3 /* YHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A64E121C192CC3004A82F3 /* YHHomeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +27,17 @@
 		771424641BFE246E007002B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7714246C1BFE246E007002B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771424711BFE246E007002B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		779E58D51C194FDD00092118 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		779E58DC1C19516800092118 /* YHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
+		779E58DD1C19516800092118 /* YHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
+		779E58E21C1953CD00092118 /* YHBaseNimbusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseNimbusTableViewController.h; sourceTree = "<group>"; };
+		779E58E31C1953CD00092118 /* YHBaseNimbusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseNimbusTableViewController.m; sourceTree = "<group>"; };
+		779E58E41C1953CD00092118 /* YHBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseTableViewController.h; sourceTree = "<group>"; };
+		779E58E51C1953CD00092118 /* YHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseTableViewController.m; sourceTree = "<group>"; };
+		779E58E91C1954E400092118 /* YHBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseTableViewCell.h; sourceTree = "<group>"; };
+		779E58EA1C1954E400092118 /* YHBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseTableViewCell.m; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		77A64E0D1C192C93004A82F3 /* YHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
-		77A64E0E1C192C93004A82F3 /* YHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 		77A64E111C192CC3004A82F3 /* YHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHomeViewController.h; sourceTree = "<group>"; };
 		77A64E121C192CC3004A82F3 /* YHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHomeViewController.m; sourceTree = "<group>"; };
 		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,13 +77,14 @@
 		7714245F1BFE246E007002B4 /* Oscar */ = {
 			isa = PBXGroup;
 			children = (
-				77A64E0A1C192C22004A82F3 /* Module */,
-				77A64E091C1928B3004A82F3 /* Category */,
-				77A64E081C1928A9004A82F3 /* Vendor */,
-				77A64E071C1928A1004A82F3 /* Model */,
 				771424631BFE246E007002B4 /* AppDelegate.h */,
 				771424641BFE246E007002B4 /* AppDelegate.m */,
+				779E58D61C19516800092118 /* BaseClass */,
+				77A64E091C1928B3004A82F3 /* Category */,
+				77A64E071C1928A1004A82F3 /* Model */,
+				77A64E0A1C192C22004A82F3 /* Module */,
 				771424601BFE246E007002B4 /* Supporting Files */,
+				77A64E081C1928A9004A82F3 /* Vendor */,
 			);
 			path = Oscar;
 			sourceTree = "<group>";
@@ -82,12 +93,52 @@
 			isa = PBXGroup;
 			children = (
 				77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */,
+				779E58D51C194FDD00092118 /* Macro.h */,
 				7714246C1BFE246E007002B4 /* Assets.xcassets */,
 				771424711BFE246E007002B4 /* Info.plist */,
 				771424611BFE246E007002B4 /* main.m */,
 				77A64E051C192784004A82F3 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		779E58D61C19516800092118 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				779E58D71C19516800092118 /* BaseController */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		779E58D71C19516800092118 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				779E58DC1C19516800092118 /* YHBaseViewController.h */,
+				779E58DD1C19516800092118 /* YHBaseViewController.m */,
+				779E58E81C1954C800092118 /* TableViewCell */,
+				779E58E11C1953CD00092118 /* TableViewController */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		779E58E11C1953CD00092118 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				779E58E21C1953CD00092118 /* YHBaseNimbusTableViewController.h */,
+				779E58E31C1953CD00092118 /* YHBaseNimbusTableViewController.m */,
+				779E58E41C1953CD00092118 /* YHBaseTableViewController.h */,
+				779E58E51C1953CD00092118 /* YHBaseTableViewController.m */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		779E58E81C1954C800092118 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				779E58E91C1954E400092118 /* YHBaseTableViewCell.h */,
+				779E58EA1C1954E400092118 /* YHBaseTableViewCell.m */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		77A64E071C1928A1004A82F3 /* Model */ = {
@@ -115,26 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				77A64E101C192CAC004A82F3 /* Home */,
-				77A64E0B1C192C76004A82F3 /* BaseClass */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		77A64E0B1C192C76004A82F3 /* BaseClass */ = {
-			isa = PBXGroup;
-			children = (
-				77A64E0C1C192C76004A82F3 /* BaseController */,
-			);
-			path = BaseClass;
-			sourceTree = "<group>";
-		};
-		77A64E0C1C192C76004A82F3 /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-				77A64E0D1C192C93004A82F3 /* YHBaseViewController.h */,
-				77A64E0E1C192C93004A82F3 /* YHBaseViewController.m */,
-			);
-			path = BaseController;
 			sourceTree = "<group>";
 		};
 		77A64E101C192CAC004A82F3 /* Home */ = {
@@ -284,10 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779E58E61C1953CD00092118 /* YHBaseNimbusTableViewController.m in Sources */,
+				779E58EB1C1954E400092118 /* YHBaseTableViewCell.m in Sources */,
 				771424651BFE246E007002B4 /* AppDelegate.m in Sources */,
-				77A64E0F1C192C93004A82F3 /* YHBaseViewController.m in Sources */,
 				77A64E131C192CC3004A82F3 /* YHHomeViewController.m in Sources */,
 				771424621BFE246E007002B4 /* main.m in Sources */,
+				779E58E01C19516800092118 /* YHBaseViewController.m in Sources */,
+				779E58E71C1953CD00092118 /* YHBaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
