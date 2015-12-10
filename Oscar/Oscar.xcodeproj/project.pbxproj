@@ -10,29 +10,9 @@
 		3F21994D273287C33CD908D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE29070A4A084D85FE1A1D /* libPods.a */; };
 		771424621BFE246E007002B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424611BFE246E007002B4 /* main.m */; };
 		771424651BFE246E007002B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424641BFE246E007002B4 /* AppDelegate.m */; };
-		771424681BFE246E007002B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424671BFE246E007002B4 /* ViewController.m */; };
-		7714246B1BFE246E007002B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771424691BFE246E007002B4 /* Main.storyboard */; };
 		7714246D1BFE246E007002B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714246C1BFE246E007002B4 /* Assets.xcassets */; };
-		7714247B1BFE246E007002B4 /* OscarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7714247A1BFE246E007002B4 /* OscarTests.m */; };
-		771424861BFE246F007002B4 /* OscarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424851BFE246F007002B4 /* OscarUITests.m */; };
+		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		771424771BFE246E007002B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 771424551BFE246E007002B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7714245C1BFE246E007002B4;
-			remoteInfo = Oscar;
-		};
-		771424821BFE246E007002B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 771424551BFE246E007002B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7714245C1BFE246E007002B4;
-			remoteInfo = Oscar;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F8229856C519739EC80128D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,18 +20,10 @@
 		771424611BFE246E007002B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		771424631BFE246E007002B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		771424641BFE246E007002B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		771424661BFE246E007002B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		771424671BFE246E007002B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7714246A1BFE246E007002B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7714246C1BFE246E007002B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771424711BFE246E007002B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		771424761BFE246E007002B4 /* OscarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7714247A1BFE246E007002B4 /* OscarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OscarTests.m; sourceTree = "<group>"; };
-		7714247C1BFE246E007002B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		771424811BFE246E007002B4 /* OscarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OscarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		771424851BFE246F007002B4 /* OscarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OscarUITests.m; sourceTree = "<group>"; };
-		771424871BFE246F007002B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
+		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,20 +37,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		771424731BFE246E007002B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7714247E1BFE246E007002B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,8 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				7714245F1BFE246E007002B4 /* Oscar */,
-				771424791BFE246E007002B4 /* OscarTests */,
-				771424841BFE246F007002B4 /* OscarUITests */,
 				7714245E1BFE246E007002B4 /* Products */,
 				D7E6F1DD009CD36EEE0DD0F8 /* Pods */,
 				A1A9A8D6AA44DBF8101296A5 /* Frameworks */,
@@ -98,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				7714245D1BFE246E007002B4 /* Oscar.app */,
-				771424761BFE246E007002B4 /* OscarTests.xctest */,
-				771424811BFE246E007002B4 /* OscarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +63,6 @@
 			children = (
 				771424631BFE246E007002B4 /* AppDelegate.h */,
 				771424641BFE246E007002B4 /* AppDelegate.m */,
-				771424661BFE246E007002B4 /* ViewController.h */,
-				771424671BFE246E007002B4 /* ViewController.m */,
-				771424691BFE246E007002B4 /* Main.storyboard */,
 				771424601BFE246E007002B4 /* Supporting Files */,
 			);
 			path = Oscar;
@@ -124,26 +75,9 @@
 				7714246C1BFE246E007002B4 /* Assets.xcassets */,
 				771424711BFE246E007002B4 /* Info.plist */,
 				771424611BFE246E007002B4 /* main.m */,
+				77A64E051C192784004A82F3 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		771424791BFE246E007002B4 /* OscarTests */ = {
-			isa = PBXGroup;
-			children = (
-				7714247A1BFE246E007002B4 /* OscarTests.m */,
-				7714247C1BFE246E007002B4 /* Info.plist */,
-			);
-			path = OscarTests;
-			sourceTree = "<group>";
-		};
-		771424841BFE246F007002B4 /* OscarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				771424851BFE246F007002B4 /* OscarUITests.m */,
-				771424871BFE246F007002B4 /* Info.plist */,
-			);
-			path = OscarUITests;
 			sourceTree = "<group>";
 		};
 		A1A9A8D6AA44DBF8101296A5 /* Frameworks */ = {
@@ -186,42 +120,6 @@
 			productReference = 7714245D1BFE246E007002B4 /* Oscar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		771424751BFE246E007002B4 /* OscarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7714248D1BFE246F007002B4 /* Build configuration list for PBXNativeTarget "OscarTests" */;
-			buildPhases = (
-				771424721BFE246E007002B4 /* Sources */,
-				771424731BFE246E007002B4 /* Frameworks */,
-				771424741BFE246E007002B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				771424781BFE246E007002B4 /* PBXTargetDependency */,
-			);
-			name = OscarTests;
-			productName = OscarTests;
-			productReference = 771424761BFE246E007002B4 /* OscarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		771424801BFE246E007002B4 /* OscarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 771424901BFE246F007002B4 /* Build configuration list for PBXNativeTarget "OscarUITests" */;
-			buildPhases = (
-				7714247D1BFE246E007002B4 /* Sources */,
-				7714247E1BFE246E007002B4 /* Frameworks */,
-				7714247F1BFE246E007002B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				771424831BFE246E007002B4 /* PBXTargetDependency */,
-			);
-			name = OscarUITests;
-			productName = OscarUITests;
-			productReference = 771424811BFE246E007002B4 /* OscarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,16 +132,6 @@
 					7714245C1BFE246E007002B4 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = MLHT46YYCF;
-					};
-					771424751BFE246E007002B4 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = MLHT46YYCF;
-						TestTargetID = 7714245C1BFE246E007002B4;
-					};
-					771424801BFE246E007002B4 = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = MLHT46YYCF;
-						TestTargetID = 7714245C1BFE246E007002B4;
 					};
 				};
 			};
@@ -261,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				7714245C1BFE246E007002B4 /* Oscar */,
-				771424751BFE246E007002B4 /* OscarTests */,
-				771424801BFE246E007002B4 /* OscarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,22 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */,
 				7714246D1BFE246E007002B4 /* Assets.xcassets in Resources */,
-				7714246B1BFE246E007002B4 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		771424741BFE246E007002B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7714247F1BFE246E007002B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,53 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771424681BFE246E007002B4 /* ViewController.m in Sources */,
 				771424651BFE246E007002B4 /* AppDelegate.m in Sources */,
 				771424621BFE246E007002B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		771424721BFE246E007002B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7714247B1BFE246E007002B4 /* OscarTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7714247D1BFE246E007002B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				771424861BFE246F007002B4 /* OscarUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		771424781BFE246E007002B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7714245C1BFE246E007002B4 /* Oscar */;
-			targetProxy = 771424771BFE246E007002B4 /* PBXContainerItemProxy */;
-		};
-		771424831BFE246E007002B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7714245C1BFE246E007002B4 /* Oscar */;
-			targetProxy = 771424821BFE246E007002B4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		771424691BFE246E007002B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7714246A1BFE246E007002B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		771424881BFE246F007002B4 /* Debug */ = {
@@ -503,54 +334,6 @@
 			};
 			name = Release;
 		};
-		7714248E1BFE246F007002B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = OscarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.OscarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oscar.app/Oscar";
-			};
-			name = Debug;
-		};
-		7714248F1BFE246F007002B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = OscarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.OscarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oscar.app/Oscar";
-			};
-			name = Release;
-		};
-		771424911BFE246F007002B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OscarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.OscarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Oscar;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		771424921BFE246F007002B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = OscarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.OscarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Oscar;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,24 +351,6 @@
 			buildConfigurations = (
 				7714248B1BFE246F007002B4 /* Debug */,
 				7714248C1BFE246F007002B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7714248D1BFE246F007002B4 /* Build configuration list for PBXNativeTarget "OscarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7714248E1BFE246F007002B4 /* Debug */,
-				7714248F1BFE246F007002B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		771424901BFE246F007002B4 /* Build configuration list for PBXNativeTarget "OscarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				771424911BFE246F007002B4 /* Debug */,
-				771424921BFE246F007002B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
