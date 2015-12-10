@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (!kIsIOS7Lower)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
 }
 
 
