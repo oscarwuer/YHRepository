@@ -18,27 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *oneView = [UIView new];
-    oneView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
-    [self.view addSubview:oneView];
-    
-    [oneView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.size.mas_equalTo(CGSizeMake(200, 200));
-    }];
-    
-    
-    
-    NSLog(@"sdfsdf");
-    
-    
-    UIView *twoView = [UIView new];
-    twoView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
-    [oneView addSubview:twoView];
-    
-    [twoView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(oneView).insets(UIEdgeInsetsMake(10, 10, 10, 10));
-    }];
+    self.view.backgroundColor = [UIColor greenColor];
     
 }
 
