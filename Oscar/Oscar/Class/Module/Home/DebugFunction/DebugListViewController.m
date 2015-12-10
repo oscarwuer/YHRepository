@@ -7,6 +7,8 @@
 //
 
 #import "DebugListViewController.h"
+#import "YHCellCatalog.h"
+#import "YHSectionCellObject.h"
 
 @interface DebugListViewController ()
 
@@ -24,25 +26,45 @@
     
     /// 开启上拉加载功能
     [self setShowsInfiniteScrolling:YES];
+    
+    [self configDatasources];
 }
 
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void)configDatasources
 {
-    return 15;
+    [self resetActions];
+    
+    NSMutableArray *cellObjects = [NSMutableArray array];
+    
+    YHSectionCellObject *sectionCellObject = [YHSectionCellObject objectWithHeight:20
+                                                                   backgroundColor:[UIColor lightGrayColor]
+                                              ];
+    [cellObjects addObject:sectionCellObject];
+    
+//    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"one"];
+//    [cellObjects addObject:cellObject];
+//    
+//    sectionCellObject = [YHSectionCellObject objectWithHeight:20
+//                                              backgroundColor:[UIColor lightGrayColor]
+//                         ];
+//    [cellObjects addObject:sectionCellObject];
+//    
+//    cellObject = [YHTitleCellObject objectWithTitle:@"two"];
+//    [cellObjects addObject:cellObject];
+//    
+//    sectionCellObject = [YHSectionCellObject objectWithHeight:20
+//                                              backgroundColor:[UIColor lightGrayColor]
+//                         ];
+//    [cellObjects addObject:sectionCellObject];
+//    
+//    cellObject = [YHTitleCellObject objectWithTitle:@"three"];
+//    cellObject.isHiddenSeparateLine = YES;
+//    [cellObjects addObject:cellObject];
+    
+    self.dataSource = [[NIMutableTableViewModel alloc] initWithListArray:cellObjects delegate:self];
+    [self.tableView reloadData];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *identifier = @"reuseCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        cell.contentView.backgroundColor = [UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f];
-    }
-    return cell;
-}
 
 #pragma mark - 下拉 上拉 回调
 - (void)triggerPullToRefreshAction

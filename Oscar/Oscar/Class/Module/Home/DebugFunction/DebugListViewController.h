@@ -6,8 +6,8 @@
 //  Copyright © 2015年 yahui.zhang. All rights reserved.
 //
 
-#import "YHBaseTableViewController.h"
+#import "YHBNimbusTableViewController.h"
 
-@interface DebugListViewController : YHBaseTableViewController
+@interface DebugListViewController : YHBNimbusTableViewController
 
 @end

@@ -9,7 +9,7 @@
 #import "YHBaseViewController.h"
 #import <SVPullToRefresh.h>
 
-@interface YHBaseTableViewController : YHBaseViewController
+@interface YHBTableViewController : YHBaseViewController
 <
 UITableViewDelegate,
 UITableViewDataSource

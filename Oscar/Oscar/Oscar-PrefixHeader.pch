@@ -15,7 +15,8 @@
 
 #pragma mark - pods
 /// Nimbus 相关
-#import <NimbusCore.h>
+#import <NimbusModels.h>
+#import <Nimbus/NimbusCore+Additions.h>
 
 /// 自动布局 masonry
 #import <Masonry.h>

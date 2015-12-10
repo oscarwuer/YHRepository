@@ -6,9 +6,9 @@
 //  Copyright © 2015年 yahui.zhang. All rights reserved.
 //
 
-#import "YHBaseTableViewController.h"
+#import "YHBTableViewController.h"
 
-@implementation YHBaseTableViewController
+@implementation YHBTableViewController
 
 - (void)viewDidLoad
 {
@@ -16,7 +16,7 @@
     [self.view addSubview:self.tableView];
     
     /// 初始化下拉刷新和上拉加载更多操作
-    typeof(YHBaseTableViewController) *weakSelf = self;
+    typeof(YHBTableViewController) *weakSelf = self;
     [self.tableView addPullToRefreshWithActionHandler:^{
         [weakSelf pullToRefreshAction];
     }];

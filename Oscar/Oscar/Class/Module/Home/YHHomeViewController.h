@@ -8,7 +8,7 @@
 
 #import <RDVTabBarController.h>
 #import <RDVTabBarItem.h>
-#import "YHBaseNimbusTableViewController.h"
+#import "YHBNimbusTableViewController.h"
 
 @interface YHHomeViewController : RDVTabBarController
 

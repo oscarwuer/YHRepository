@@ -11,13 +11,14 @@
 		771424621BFE246E007002B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424611BFE246E007002B4 /* main.m */; };
 		771424651BFE246E007002B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424641BFE246E007002B4 /* AppDelegate.m */; };
 		7714246D1BFE246E007002B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714246C1BFE246E007002B4 /* Assets.xcassets */; };
-		7730E16F1C1967CE004B6161 /* YHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E15C1C1967CE004B6161 /* YHBaseTableViewCell.m */; };
-		7730E1701C1967CE004B6161 /* YHBaseNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E15F1C1967CE004B6161 /* YHBaseNimbusTableViewController.m */; };
-		7730E1711C1967CE004B6161 /* YHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1611C1967CE004B6161 /* YHBaseTableViewController.m */; };
+		7730E16F1C1967CE004B6161 /* YHCellCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E15C1C1967CE004B6161 /* YHCellCatalog.m */; };
+		7730E1701C1967CE004B6161 /* YHBNimbusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E15F1C1967CE004B6161 /* YHBNimbusTableViewController.m */; };
+		7730E1711C1967CE004B6161 /* YHBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1611C1967CE004B6161 /* YHBTableViewController.m */; };
 		7730E1721C1967CE004B6161 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1631C1967CE004B6161 /* YHBaseViewController.m */; };
 		7730E1731C1967CE004B6161 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1661C1967CE004B6161 /* UIView+Frame.m */; };
 		7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E16C1C1967CE004B6161 /* DebugListViewController.m */; };
 		7730E1751C1967CE004B6161 /* YHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E16E1C1967CE004B6161 /* YHHomeViewController.m */; };
+		7730E1781C198432004B6161 /* YHSectionCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1771C198432004B6161 /* YHSectionCellObject.m */; };
 		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -29,12 +30,12 @@
 		771424641BFE246E007002B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7714246C1BFE246E007002B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771424711BFE246E007002B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7730E15B1C1967CE004B6161 /* YHBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseTableViewCell.h; sourceTree = "<group>"; };
-		7730E15C1C1967CE004B6161 /* YHBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseTableViewCell.m; sourceTree = "<group>"; };
-		7730E15E1C1967CE004B6161 /* YHBaseNimbusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseNimbusTableViewController.h; sourceTree = "<group>"; };
-		7730E15F1C1967CE004B6161 /* YHBaseNimbusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseNimbusTableViewController.m; sourceTree = "<group>"; };
-		7730E1601C1967CE004B6161 /* YHBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseTableViewController.h; sourceTree = "<group>"; };
-		7730E1611C1967CE004B6161 /* YHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseTableViewController.m; sourceTree = "<group>"; };
+		7730E15B1C1967CE004B6161 /* YHCellCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCellCatalog.h; sourceTree = "<group>"; };
+		7730E15C1C1967CE004B6161 /* YHCellCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCellCatalog.m; sourceTree = "<group>"; };
+		7730E15E1C1967CE004B6161 /* YHBNimbusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBNimbusTableViewController.h; sourceTree = "<group>"; };
+		7730E15F1C1967CE004B6161 /* YHBNimbusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBNimbusTableViewController.m; sourceTree = "<group>"; };
+		7730E1601C1967CE004B6161 /* YHBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBTableViewController.h; sourceTree = "<group>"; };
+		7730E1611C1967CE004B6161 /* YHBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBTableViewController.m; sourceTree = "<group>"; };
 		7730E1621C1967CE004B6161 /* YHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
 		7730E1631C1967CE004B6161 /* YHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 		7730E1651C1967CE004B6161 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -43,6 +44,8 @@
 		7730E16C1C1967CE004B6161 /* DebugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugListViewController.m; sourceTree = "<group>"; };
 		7730E16D1C1967CE004B6161 /* YHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHomeViewController.h; sourceTree = "<group>"; };
 		7730E16E1C1967CE004B6161 /* YHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHomeViewController.m; sourceTree = "<group>"; };
+		7730E1761C198432004B6161 /* YHSectionCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSectionCellObject.h; sourceTree = "<group>"; };
+		7730E1771C198432004B6161 /* YHSectionCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSectionCellObject.m; sourceTree = "<group>"; };
 		779E58D51C194FDD00092118 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -139,8 +142,10 @@
 		7730E15A1C1967CE004B6161 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				7730E15B1C1967CE004B6161 /* YHBaseTableViewCell.h */,
-				7730E15C1C1967CE004B6161 /* YHBaseTableViewCell.m */,
+				7730E15B1C1967CE004B6161 /* YHCellCatalog.h */,
+				7730E15C1C1967CE004B6161 /* YHCellCatalog.m */,
+				7730E1761C198432004B6161 /* YHSectionCellObject.h */,
+				7730E1771C198432004B6161 /* YHSectionCellObject.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -148,10 +153,10 @@
 		7730E15D1C1967CE004B6161 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7730E15E1C1967CE004B6161 /* YHBaseNimbusTableViewController.h */,
-				7730E15F1C1967CE004B6161 /* YHBaseNimbusTableViewController.m */,
-				7730E1601C1967CE004B6161 /* YHBaseTableViewController.h */,
-				7730E1611C1967CE004B6161 /* YHBaseTableViewController.m */,
+				7730E15E1C1967CE004B6161 /* YHBNimbusTableViewController.h */,
+				7730E15F1C1967CE004B6161 /* YHBNimbusTableViewController.m */,
+				7730E1601C1967CE004B6161 /* YHBTableViewController.h */,
+				7730E1611C1967CE004B6161 /* YHBTableViewController.m */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -368,14 +373,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				771424651BFE246E007002B4 /* AppDelegate.m in Sources */,
-				7730E16F1C1967CE004B6161 /* YHBaseTableViewCell.m in Sources */,
+				7730E1781C198432004B6161 /* YHSectionCellObject.m in Sources */,
+				7730E16F1C1967CE004B6161 /* YHCellCatalog.m in Sources */,
 				771424621BFE246E007002B4 /* main.m in Sources */,
 				7730E1731C1967CE004B6161 /* UIView+Frame.m in Sources */,
-				7730E1701C1967CE004B6161 /* YHBaseNimbusTableViewController.m in Sources */,
+				7730E1701C1967CE004B6161 /* YHBNimbusTableViewController.m in Sources */,
 				7730E1751C1967CE004B6161 /* YHHomeViewController.m in Sources */,
 				7730E1721C1967CE004B6161 /* YHBaseViewController.m in Sources */,
 				7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */,
-				7730E1711C1967CE004B6161 /* YHBaseTableViewController.m in Sources */,
+				7730E1711C1967CE004B6161 /* YHBTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
