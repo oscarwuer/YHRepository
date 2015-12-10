@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <Masonry.h>
 
 @interface ViewController ()
 
@@ -17,9 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor greenColor];
-    
 }
 
 @end

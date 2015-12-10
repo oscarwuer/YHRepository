@@ -1,0 +1,16 @@
+//
+//  Oscar-PrefixHeader.pch
+//  Oscar
+//
+//  Created by yahui.zhang on 15/12/10.
+//  Copyright © 2015年 yahui.zhang. All rights reserved.
+//
+
+#ifndef Oscar_PrefixHeader_pch
+#define Oscar_PrefixHeader_pch
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* Oscar_PrefixHeader_pch */
