@@ -19,6 +19,7 @@
 		7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E16C1C1967CE004B6161 /* DebugListViewController.m */; };
 		7730E1751C1967CE004B6161 /* YHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E16E1C1967CE004B6161 /* YHHomeViewController.m */; };
 		7730E1781C198432004B6161 /* YHSectionCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1771C198432004B6161 /* YHSectionCellObject.m */; };
+		7730E17B1C198DA3004B6161 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E17A1C198DA3004B6161 /* Colours.m */; };
 		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		7730E16E1C1967CE004B6161 /* YHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHomeViewController.m; sourceTree = "<group>"; };
 		7730E1761C198432004B6161 /* YHSectionCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSectionCellObject.h; sourceTree = "<group>"; };
 		7730E1771C198432004B6161 /* YHSectionCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSectionCellObject.m; sourceTree = "<group>"; };
+		7730E1791C198DA3004B6161 /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		7730E17A1C198DA3004B6161 /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
 		779E58D51C194FDD00092118 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 			children = (
 				7730E1651C1967CE004B6161 /* UIView+Frame.h */,
 				7730E1661C1967CE004B6161 /* UIView+Frame.m */,
+				7730E1791C198DA3004B6161 /* Colours.h */,
+				7730E17A1C198DA3004B6161 /* Colours.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				7730E1731C1967CE004B6161 /* UIView+Frame.m in Sources */,
 				7730E1701C1967CE004B6161 /* YHBNimbusTableViewController.m in Sources */,
 				7730E1751C1967CE004B6161 /* YHHomeViewController.m in Sources */,
+				7730E17B1C198DA3004B6161 /* Colours.m in Sources */,
 				7730E1721C1967CE004B6161 /* YHBaseViewController.m in Sources */,
 				7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */,
 				7730E1711C1967CE004B6161 /* YHBTableViewController.m in Sources */,

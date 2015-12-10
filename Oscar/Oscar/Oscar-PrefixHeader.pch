@@ -23,6 +23,7 @@
 
 #pragma mark - category
 #import "UIView+Frame.h"
+#import "Colours.h"
 
 
 #endif /* Oscar_PrefixHeader_pch */

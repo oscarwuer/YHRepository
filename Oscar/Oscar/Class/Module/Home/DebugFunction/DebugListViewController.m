@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.backgroundColor = [UIColor lightGrayColor];
+    self.tableView.backgroundColor = [UIColor colorFromHexString:@"#d8d8d8"];
     
     /// 开启下拉功能
     [self setShowsPullToRefresh:YES];
@@ -36,33 +36,55 @@
     
     NSMutableArray *cellObjects = [NSMutableArray array];
     
-    YHSectionCellObject *sectionCellObject = [YHSectionCellObject objectWithHeight:20
-                                                                   backgroundColor:[UIColor lightGrayColor]
+    /// section背景颜色
+    UIColor *sectionBackgroundColor = [UIColor colorFromHexString:@"#d8d8d8"];
+    
+    YHSectionCellObject *sectionCellObject = nil;
+    sectionCellObject = [YHSectionCellObject objectWithHeight:20
+                                              backgroundColor:sectionBackgroundColor
                                               ];
     [cellObjects addObject:sectionCellObject];
     
-//    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"one"];
-//    [cellObjects addObject:cellObject];
-//    
-//    sectionCellObject = [YHSectionCellObject objectWithHeight:20
-//                                              backgroundColor:[UIColor lightGrayColor]
-//                         ];
-//    [cellObjects addObject:sectionCellObject];
-//    
-//    cellObject = [YHTitleCellObject objectWithTitle:@"two"];
-//    [cellObjects addObject:cellObject];
-//    
-//    sectionCellObject = [YHSectionCellObject objectWithHeight:20
-//                                              backgroundColor:[UIColor lightGrayColor]
-//                         ];
-//    [cellObjects addObject:sectionCellObject];
-//    
-//    cellObject = [YHTitleCellObject objectWithTitle:@"three"];
-//    cellObject.isHiddenSeparateLine = YES;
-//    [cellObjects addObject:cellObject];
+    /// one
+    YHTitleCellObject *cellObject = nil;
+    cellObject = [YHTitleCellObject objectWithTitle:@"one"];
+    cellObject.isHiddenSeparateLine = YES;
+    [cellObjects addObject:cellObject];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(oneClick:)];
+    
+    
+    sectionCellObject = [YHSectionCellObject objectWithHeight:20
+                                              backgroundColor:sectionBackgroundColor
+                         ];
+    [cellObjects addObject:sectionCellObject];
+    
+    
+    /// two
+    cellObject = [YHTitleCellObject objectWithTitle:@"two"];
+    cellObject.isHiddenSeparateLine = YES;
+    [cellObjects addObject:cellObject];
+    
+    sectionCellObject = [YHSectionCellObject objectWithHeight:20
+                                              backgroundColor:sectionBackgroundColor
+                         ];
+    [cellObjects addObject:sectionCellObject];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(oneClick:)];
+    
+    /// three
+    cellObject = [YHTitleCellObject objectWithTitle:@"three"];
+    cellObject.isHiddenSeparateLine = YES;
+    [cellObjects addObject:cellObject];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(oneClick:)];
     
     self.dataSource = [[NIMutableTableViewModel alloc] initWithListArray:cellObjects delegate:self];
     [self.tableView reloadData];
+}
+
+
+#pragma mark - click event
+- (void)oneClick:(id)sender
+{
+    NSLog(@"%@",sender);
 }
 
 
