@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YHHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +21,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [UIViewController new];
+    [self showHomeViewController];
     
     return YES;
+}
+
+- (void)showHomeViewController
+{
+    YHHomeViewController *homeVC = [[YHHomeViewController alloc] init];
+    self.window.rootViewController = homeVC;
 }
 
 @end
