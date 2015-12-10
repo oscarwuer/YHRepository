@@ -7,8 +7,9 @@
 //
 
 #import "YHHomeViewController.h"
+#import "DebugListViewController.h"
 
-@interface YHHomeViewController ()
+@interface YHHomeViewController ()<RDVTabBarControllerDelegate>
 
 @end
 
@@ -17,24 +18,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initialize];
     [self setupViewControllers];
     [self setupTabbar];
     
 }
 
+- (void)initialize
+{
+    self.delegate = self;
+    /// adjust tabbar height
+    [self.tabBar setFrame:CGRectMake(self.tabBar.left, self.tabBar.top, self.tabBar.width, kTabbarHeight)];
+}
+
 /// initialize viewControllers
 - (void)setupViewControllers
 {
-    YHBaseTableViewController *vc1 = [[YHBaseTableViewController alloc] init];
+    DebugListViewController *vc1 = [[DebugListViewController alloc] init];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
-    self.viewControllers = @[nav1];
+    
+    DebugListViewController *vc2 = [[DebugListViewController alloc] init];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+    
+    self.viewControllers = @[nav1,nav2];
     
 }
 
-/// initialize tabbar
+/// initialize tabbarItems
 - (void)setupTabbar
 {
+    /// tabbar titles
+    NSArray *itemTitles = @[@"one",@"two"];
     
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in [[self tabBar] items]) {
+        item.title = itemTitles[index];
+        index ++;
+    }
+}
+
+#pragma mark - RDVTabBarControllerDelegateX
+- (void)tabBarController:(RDVTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSLog(@"%@",viewController);
 }
 
 @end

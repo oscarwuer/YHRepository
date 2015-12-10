@@ -13,5 +13,7 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
+/// tabbar height
+#define kTabbarHeight 49
 
 #endif /* Macro_h */
