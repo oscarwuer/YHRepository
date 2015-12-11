@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Masonry (0.6.3)
+  - MBProgressHUD (0.9.1)
   - Nimbus (1.3.0):
     - Nimbus/AttributedLabel (= 1.3.0)
     - Nimbus/Badge (= 1.3.0)
@@ -77,6 +78,7 @@ PODS:
 
 DEPENDENCIES:
   - Masonry
+  - MBProgressHUD (~> 0.9.1)
   - Nimbus
   - RDVTabBarController (~> 1.1.9)
   - SVPullToRefresh (~> 0.4.1)
@@ -84,6 +86,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   Nimbus: e7f33bc6d6cb4fe5ea0aee0c7e0883696123422c
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
