@@ -21,6 +21,9 @@
 		7730E1781C198432004B6161 /* YHSectionCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E1771C198432004B6161 /* YHSectionCellObject.m */; };
 		7730E17B1C198DA3004B6161 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 7730E17A1C198DA3004B6161 /* Colours.m */; };
 		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
+		77D73BB81C1A6E80000109A6 /* YHHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BB71C1A6E80000109A6 /* YHHttpResponse.m */; };
+		77D73BBB1C1A7088000109A6 /* YHHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BBA1C1A7088000109A6 /* YHHttpSessionManager.m */; };
+		77D73BC51C1AACA2000109A6 /* DebugHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BC41C1AACA2000109A6 /* DebugHttpModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,13 @@
 		779E58D51C194FDD00092118 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		77D73BB61C1A6E80000109A6 /* YHHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttpResponse.h; sourceTree = "<group>"; };
+		77D73BB71C1A6E80000109A6 /* YHHttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttpResponse.m; sourceTree = "<group>"; };
+		77D73BB91C1A7088000109A6 /* YHHttpSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttpSessionManager.h; sourceTree = "<group>"; };
+		77D73BBA1C1A7088000109A6 /* YHHttpSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttpSessionManager.m; sourceTree = "<group>"; };
+		77D73BC11C1AA906000109A6 /* MacroUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUrls.h; sourceTree = "<group>"; };
+		77D73BC31C1AACA2000109A6 /* DebugHttpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugHttpModel.h; sourceTree = "<group>"; };
+		77D73BC41C1AACA2000109A6 /* DebugHttpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugHttpModel.m; sourceTree = "<group>"; };
 		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +114,7 @@
 			children = (
 				77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */,
 				779E58D51C194FDD00092118 /* Macro.h */,
+				77D73BC11C1AA906000109A6 /* MacroUrls.h */,
 				7714246C1BFE246E007002B4 /* Assets.xcassets */,
 				771424711BFE246E007002B4 /* Info.plist */,
 				771424611BFE246E007002B4 /* main.m */,
@@ -178,6 +189,7 @@
 		7730E1671C1967CE004B6161 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77D73BB51C1A6DD4000109A6 /* HttpRequestManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +215,7 @@
 		7730E16A1C1967CE004B6161 /* DebugFunction */ = {
 			isa = PBXGroup;
 			children = (
+				77D73BC21C1AACA2000109A6 /* Model */,
 				7730E16B1C1967CE004B6161 /* DebugListViewController.h */,
 				7730E16C1C1967CE004B6161 /* DebugListViewController.m */,
 			);
@@ -237,6 +250,26 @@
 			children = (
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		77D73BB51C1A6DD4000109A6 /* HttpRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				77D73BB61C1A6E80000109A6 /* YHHttpResponse.h */,
+				77D73BB71C1A6E80000109A6 /* YHHttpResponse.m */,
+				77D73BB91C1A7088000109A6 /* YHHttpSessionManager.h */,
+				77D73BBA1C1A7088000109A6 /* YHHttpSessionManager.m */,
+			);
+			path = HttpRequestManager;
+			sourceTree = "<group>";
+		};
+		77D73BC21C1AACA2000109A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77D73BC31C1AACA2000109A6 /* DebugHttpModel.h */,
+				77D73BC41C1AACA2000109A6 /* DebugHttpModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A1A9A8D6AA44DBF8101296A5 /* Frameworks */ = {
@@ -381,10 +414,13 @@
 				7730E1781C198432004B6161 /* YHSectionCellObject.m in Sources */,
 				7730E16F1C1967CE004B6161 /* YHCellCatalog.m in Sources */,
 				771424621BFE246E007002B4 /* main.m in Sources */,
+				77D73BBB1C1A7088000109A6 /* YHHttpSessionManager.m in Sources */,
 				7730E1731C1967CE004B6161 /* UIView+Frame.m in Sources */,
 				7730E1701C1967CE004B6161 /* YHBNimbusTableViewController.m in Sources */,
 				7730E1751C1967CE004B6161 /* YHHomeViewController.m in Sources */,
+				77D73BB81C1A6E80000109A6 /* YHHttpResponse.m in Sources */,
 				7730E17B1C198DA3004B6161 /* Colours.m in Sources */,
+				77D73BC51C1AACA2000109A6 /* DebugHttpModel.m in Sources */,
 				7730E1721C1967CE004B6161 /* YHBaseViewController.m in Sources */,
 				7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */,
 				7730E1711C1967CE004B6161 /* YHBTableViewController.m in Sources */,

@@ -9,8 +9,11 @@
 #import "DebugListViewController.h"
 #import "YHCellCatalog.h"
 #import "YHSectionCellObject.h"
+#import "DebugHttpModel.h"
 
 @interface DebugListViewController ()
+
+@property (nonatomic, strong) DebugHttpModel *httpModel;
 
 @end
 
@@ -28,6 +31,8 @@
     [self setShowsInfiniteScrolling:YES];
     
     [self configDatasources];
+    
+    self.httpModel = [DebugHttpModel manager];
 }
 
 - (void)configDatasources
@@ -85,6 +90,11 @@
 - (void)oneClick:(id)sender
 {
     NSLog(@"%@",sender);
+    [self.httpModel test_getRequest:kURL_Qiniu_hots
+                         completion:^(YHHttpResponse *response) {
+                             NSLog(@"%@",response.responseDic);
+                             
+                         }];
 }
 
 

@@ -13,6 +13,9 @@
 #pragma mark - 宏定义
 #import "Macro.h"
 
+#pragma MARK - URL
+#import "MacroUrls.h"
+
 #pragma mark - pods
 /// Nimbus 相关
 #import <NimbusModels.h>
