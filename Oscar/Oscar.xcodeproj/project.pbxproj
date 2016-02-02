@@ -24,6 +24,7 @@
 		77D73BB81C1A6E80000109A6 /* YHHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BB71C1A6E80000109A6 /* YHHttpResponse.m */; };
 		77D73BBB1C1A7088000109A6 /* YHHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BBA1C1A7088000109A6 /* YHHttpSessionManager.m */; };
 		77D73BC51C1AACA2000109A6 /* DebugHttpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D73BC41C1AACA2000109A6 /* DebugHttpModel.m */; };
+		77FADDF61C5B4CCC00807CF7 /* DebugSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FADDF51C5B4CCC00807CF7 /* DebugSectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		77D73BC11C1AA906000109A6 /* MacroUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUrls.h; sourceTree = "<group>"; };
 		77D73BC31C1AACA2000109A6 /* DebugHttpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugHttpModel.h; sourceTree = "<group>"; };
 		77D73BC41C1AACA2000109A6 /* DebugHttpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugHttpModel.m; sourceTree = "<group>"; };
+		77FADDF41C5B4CCB00807CF7 /* DebugSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugSectionViewController.h; sourceTree = "<group>"; };
+		77FADDF51C5B4CCC00807CF7 /* DebugSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugSectionViewController.m; sourceTree = "<group>"; };
 		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +210,8 @@
 				77D73BC21C1AACA2000109A6 /* Model */,
 				7730E16B1C1967CE004B6161 /* DebugListViewController.h */,
 				7730E16C1C1967CE004B6161 /* DebugListViewController.m */,
+				77FADDF41C5B4CCB00807CF7 /* DebugSectionViewController.h */,
+				77FADDF51C5B4CCC00807CF7 /* DebugSectionViewController.m */,
 			);
 			path = DebugFunction;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				7730E1741C1967CE004B6161 /* DebugListViewController.m in Sources */,
 				7730E1711C1967CE004B6161 /* YHBTableViewController.m in Sources */,
 				775F826E1C21919100B982F6 /* YHCellCatalog.m in Sources */,
+				77FADDF61C5B4CCC00807CF7 /* DebugSectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
