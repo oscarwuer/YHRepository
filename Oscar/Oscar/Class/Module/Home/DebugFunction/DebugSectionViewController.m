@@ -40,10 +40,42 @@
     for (NSInteger i = 0; i<20; i++) {
         YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:[NSString stringWithFormat:@"This is %@ line",@(i+1)]];
         [cellObjects addObject:cellObject];
+        if (i == 4) {
+            cellObject.isHiddenSeparateLine = YES;
+            [cellObjects addObject:@"second action"];
+        }
     }
     
     self.dataSource = [[NIMutableTableViewModel alloc] initWithSectionedArray:cellObjects delegate:self];
     [self.tableView reloadData];
+}
+
+#pragma mark - 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *view = [UIView new];
+    if (section == 0)
+    {
+        view.backgroundColor = [UIColor redColor];
+        /// custome first section header
+    }
+    else
+    {
+        view.backgroundColor = [UIColor greenColor];
+        /// custome second section header
+    }
+    return view;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0)
+    {
+        return 50;
+    }
+    else
+    {
+        return 88;
+    }
+    return 44;
 }
 
 @end

@@ -250,8 +250,8 @@
     NSURLRequest *request = task.currentRequest;
     NSString *httpBody = [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding];
     NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
-    NSLog(@"\n#################### begin ####################\n客户端请求数据:\n Method:%@ \n URL:%@ \n Header:%@ \n Body:%@\n#################### end ####################\n", request.HTTPMethod, request.URL, request.allHTTPHeaderFields, httpBody);
-    NSLog(@"\n#################### begin ####################\n服务器返回数据:\n statusCode:%li \n Header:%@\n#################### end ####################\n", (long)response.statusCode, response.allHeaderFields);
+    NSLog(@"\n#### begin ####\n客户端请求数据:\n Method:%@ \n URL:%@ \n Header:%@ \n Body:%@\n#### end ####\n", request.HTTPMethod, request.URL, request.allHTTPHeaderFields, httpBody);
+    NSLog(@"\n#### begin ####\n服务器返回数据:\n statusCode:%li \n Header:%@\n##### end ####\n", (long)response.statusCode, response.allHeaderFields);
     
     if (complete) {
         NSInteger statusCode = response.statusCode;

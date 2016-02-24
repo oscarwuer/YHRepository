@@ -8,6 +8,10 @@
 
 #import "YHBNimbusTableViewController.h"
 
+/*!
+ *  @brief nimbus tableView section header page 
+ */
+
 @interface DebugSectionViewController : YHBNimbusTableViewController
 
 @end
