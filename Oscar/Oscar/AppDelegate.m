@@ -26,8 +26,7 @@
     return YES;
 }
 
-- (void)showHomeViewController
-{
+- (void)showHomeViewController {
     YHHomeViewController *homeVC = [[YHHomeViewController alloc] init];
     self.window.rootViewController = homeVC;
 }

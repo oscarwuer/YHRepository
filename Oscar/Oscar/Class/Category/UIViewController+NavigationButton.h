@@ -13,12 +13,12 @@
 /// 设置navigationBar的颜色和title的颜色
 - (void)setupNavigationStyle;
 
-///
+/// 设置导航栏左边button
 - (void)setLeftButtonWithItem:(id)item
                        target:(id)target
                      selector:(SEL)selector;
 
-///
+/// 设置导航栏右边button
 - (void)setRightButtonWithItem:(id)item
                         target:(id)target
                       selector:(SEL)selector;
