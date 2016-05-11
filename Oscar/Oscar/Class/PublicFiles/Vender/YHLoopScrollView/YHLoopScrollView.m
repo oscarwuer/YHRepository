@@ -70,7 +70,7 @@ UIScrollViewDelegate
             self.delegate = delegate;
             [self initialize];
             /// 不用请注释掉（背景色）
-            self.scrollViewContent.backgroundColor = [UIColor redColor];
+//            self.scrollViewContent.backgroundColor = [UIColor redColor];
         }
         else
         {
@@ -104,7 +104,7 @@ UIScrollViewDelegate
         [btnImageView addTarget:self action:@selector(btnClickLoopView:) forControlEvents:UIControlEventTouchUpInside];
         btnImageView.frame = frame;
         /// 不用请注释掉（背景色）
-        [btnImageView setBackgroundColor:[UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f]];
+//        [btnImageView setBackgroundColor:[UIColor colorWithRed:arc4random()%255/256.0f green:arc4random()%255/256.0f blue:arc4random()%255/256.0f alpha:1.0f]];
         btnImageView.adjustsImageWhenHighlighted = NO;
         [self.mArrayImageViews addObject:btnImageView];
         [self.scrollViewContent addSubview:btnImageView];

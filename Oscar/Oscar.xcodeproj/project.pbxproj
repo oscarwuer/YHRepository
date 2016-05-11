@@ -28,6 +28,7 @@
 		772BAE6F1CE2D16A004A9ADD /* YHHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 772BAE571CE2D16A004A9ADD /* YHHttpResponse.m */; };
 		772BAE701CE2D16A004A9ADD /* YHHttpSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 772BAE591CE2D16A004A9ADD /* YHHttpSessionManager.m */; };
 		772BAE711CE2D16A004A9ADD /* YHLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 772BAE601CE2D16A004A9ADD /* YHLoopScrollView.m */; };
+		772BAE751CE2D61F004A9ADD /* DisplayLoopScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 772BAE741CE2D61F004A9ADD /* DisplayLoopScrollVC.m */; };
 		77A64E061C192784004A82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A64E051C192784004A82F3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,8 @@
 		772BAE5C1CE2D16A004A9ADD /* MacroUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroUrls.h; sourceTree = "<group>"; };
 		772BAE5F1CE2D16A004A9ADD /* YHLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLoopScrollView.h; sourceTree = "<group>"; };
 		772BAE601CE2D16A004A9ADD /* YHLoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLoopScrollView.m; sourceTree = "<group>"; };
+		772BAE731CE2D61F004A9ADD /* DisplayLoopScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLoopScrollVC.h; sourceTree = "<group>"; };
+		772BAE741CE2D61F004A9ADD /* DisplayLoopScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLoopScrollVC.m; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,9 +200,9 @@
 		772BAE3C1CE2D16A004A9ADD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				772BAE3D1CE2D16A004A9ADD /* DisplayFunction */,
 				772BAE461CE2D16A004A9ADD /* YHHomeViewController.h */,
 				772BAE471CE2D16A004A9ADD /* YHHomeViewController.m */,
+				772BAE3D1CE2D16A004A9ADD /* DisplayFunction */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			children = (
 				772BAE3E1CE2D16A004A9ADD /* DisplayListVC.h */,
 				772BAE3F1CE2D16A004A9ADD /* DisplayListVC.m */,
+				772BAE721CE2D5FC004A9ADD /* LoopScrollView */,
 				772BAE401CE2D16A004A9ADD /* NimbusSectionVC */,
 				772BAE431CE2D16A004A9ADD /* SVPullRefreshVC */,
 			);
@@ -304,6 +308,15 @@
 				772BAE601CE2D16A004A9ADD /* YHLoopScrollView.m */,
 			);
 			path = YHLoopScrollView;
+			sourceTree = "<group>";
+		};
+		772BAE721CE2D5FC004A9ADD /* LoopScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				772BAE731CE2D61F004A9ADD /* DisplayLoopScrollVC.h */,
+				772BAE741CE2D61F004A9ADD /* DisplayLoopScrollVC.m */,
+			);
+			path = LoopScrollView;
 			sourceTree = "<group>";
 		};
 		779E58EC1C195AE200092118 /* Resouces */ = {
@@ -475,6 +488,7 @@
 				772BAE681CE2D16A004A9ADD /* SVPullRefreshVC.m in Sources */,
 				772BAE691CE2D16A004A9ADD /* YHHomeViewController.m in Sources */,
 				772BAE6F1CE2D16A004A9ADD /* YHHttpResponse.m in Sources */,
+				772BAE751CE2D61F004A9ADD /* DisplayLoopScrollVC.m in Sources */,
 				772BAE671CE2D16A004A9ADD /* NimbusSectionVC.m in Sources */,
 				772BAE6A1CE2D16A004A9ADD /* Colours.m in Sources */,
 				772BAE631CE2D16A004A9ADD /* YHBaseViewController.m in Sources */,
