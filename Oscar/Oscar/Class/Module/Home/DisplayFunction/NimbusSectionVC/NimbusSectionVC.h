@@ -12,6 +12,6 @@
  *  @brief nimbus tableView section header page 
  */
 
-@interface DebugSectionViewController : YHBNimbusTableViewController
+@interface NimbusSectionVC : YHBNimbusTableViewController
 
 @end

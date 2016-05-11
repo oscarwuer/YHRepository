@@ -6,16 +6,16 @@
 //  Copyright © 2015年 yahui.zhang. All rights reserved.
 //
 
-#import "DebugHttpModel.h"
+#import "DisplayHttpModel.h"
 
-@interface DebugHttpModel ()
+@interface DisplayHttpModel ()
 
 @property (nonatomic, strong) YHHttpSessionManager *sessionManager;
 
 
 @end
 
-@implementation DebugHttpModel
+@implementation DisplayHttpModel
 
 -(instancetype)init{
     self = [super init];

@@ -12,6 +12,6 @@
  *  @brief 下拉刷新 上拉加载页面
  */
 
-@interface DebugPullViewController : YHBNimbusTableViewController
+@interface SVPullRefreshVC : YHBNimbusTableViewController
 
 @end

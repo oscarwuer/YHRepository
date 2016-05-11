@@ -6,14 +6,14 @@
 //  Copyright © 2016年 yahui.zhang. All rights reserved.
 //
 
-#import "DebugPullViewController.h"
+#import "SVPullRefreshVC.h"
 #import "YHCellCatalog.h"
 
-@interface DebugPullViewController ()
+@interface SVPullRefreshVC ()
 
 @end
 
-@implementation DebugPullViewController
+@implementation SVPullRefreshVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

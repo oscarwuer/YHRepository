@@ -8,7 +8,7 @@
 
 #import "YHHttpSessionManager.h"
 
-@interface DebugHttpModel : YHHttpSessionManager
+@interface DisplayHttpModel : YHHttpSessionManager
 
 + (instancetype)manager;
 

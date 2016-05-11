@@ -8,6 +8,6 @@
 
 #import "YHBNimbusTableViewController.h"
 
-@interface DebugListViewController : YHBNimbusTableViewController
+@interface DisplayListVC : YHBNimbusTableViewController
 
 @end

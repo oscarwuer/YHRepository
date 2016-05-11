@@ -6,22 +6,22 @@
 //  Copyright © 2015年 yahui.zhang. All rights reserved.
 //
 
-#import "DebugListViewController.h"
+#import "DisplayListVC.h"
 
-#import "DebugSectionViewController.h"
-#import "DebugPullViewController.h"
+#import "NimbusSectionVC.h"
+#import "SVPullRefreshVC.h"
 
 #import "YHCellCatalog.h"
 #import "YHSectionCellObject.h"
-#import "DebugHttpModel.h"
+#import "DisplayHttpModel.h"
 
-@interface DebugListViewController ()
+@interface DisplayListVC ()
 
-@property (nonatomic, strong) DebugHttpModel *httpModel;
+@property (nonatomic, strong) DisplayHttpModel *httpModel;
 
 @end
 
-@implementation DebugListViewController
+@implementation DisplayListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +32,7 @@
     [self configDatasources];
     
     /// 初始化请求类
-    self.httpModel = [DebugHttpModel manager];
+    self.httpModel = [DisplayHttpModel manager];
 }
 
 - (void)configDatasources
@@ -106,12 +106,12 @@
 }
 
 - (void)twoClick:(id)sender {
-    DebugSectionViewController *vc = [[DebugSectionViewController alloc] init];
+    NimbusSectionVC *vc = [[NimbusSectionVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)threeClick:(id)sender {
-    DebugPullViewController *vc = [[DebugPullViewController alloc] init];
+    SVPullRefreshVC *vc = [[SVPullRefreshVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

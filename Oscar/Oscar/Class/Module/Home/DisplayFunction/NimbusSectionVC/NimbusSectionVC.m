@@ -6,14 +6,14 @@
 //  Copyright © 2016年 yahui.zhang. All rights reserved.
 //
 
-#import "DebugSectionViewController.h"
+#import "NimbusSectionVC.h"
 #import "YHCellCatalog.h"
 
-@interface DebugSectionViewController ()
+@interface NimbusSectionVC ()
 
 @end
 
-@implementation DebugSectionViewController
+@implementation NimbusSectionVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
