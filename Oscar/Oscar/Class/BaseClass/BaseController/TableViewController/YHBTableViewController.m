@@ -15,18 +15,27 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     
-    /// 初始化下拉刷新和上拉加载更多操作
+    /// 初始化下拉刷新功能
     typeof(YHBTableViewController) *weakSelf = self;
     [self.tableView addPullToRefreshWithActionHandler:^{
         [weakSelf pullToRefreshAction];
     }];
     [self.tableView setShowsPullToRefresh:NO];
     
+    /// 初始化上拉加载更多功能
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         [weakSelf infiniteScrollingAction];
     }];
     [self.tableView setShowsInfiniteScrolling:NO];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
 }
 
 #pragma mark - tableView deletage && datasource
@@ -97,8 +106,9 @@
 {
     if (!_tableView)
     {
-        CGRect rect = CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64 - kTabbarHeight);
-        _tableView = [[UITableView alloc] initWithFrame:rect style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.autoresizingMask =  UIViewAutoresizingFlexibleWidth   |
+                                       UIViewAutoresizingFlexibleHeight;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = NO;

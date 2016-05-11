@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RDVTabBarController.h>
 
 @interface YHBaseViewController : UIViewController
 

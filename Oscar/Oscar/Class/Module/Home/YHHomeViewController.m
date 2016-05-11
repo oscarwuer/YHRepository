@@ -7,7 +7,7 @@
 //
 
 #import "YHHomeViewController.h"
-#import "DebugListViewController.h"
+#import "DisplayListVC.h"
 
 @interface YHHomeViewController ()<RDVTabBarControllerDelegate>
 
@@ -34,10 +34,10 @@
 /// initialize viewControllers
 - (void)setupViewControllers
 {
-    DebugListViewController *vc1 = [[DebugListViewController alloc] init];
+    DisplayListVC *vc1 = [[DisplayListVC alloc] init];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     
-    DebugListViewController *vc2 = [[DebugListViewController alloc] init];
+    UIViewController *vc2 = [[UIViewController alloc] init];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     
     self.viewControllers = @[nav1,nav2];
