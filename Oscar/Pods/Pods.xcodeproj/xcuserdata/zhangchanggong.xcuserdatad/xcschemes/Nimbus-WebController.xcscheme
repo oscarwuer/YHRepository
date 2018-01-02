@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DF2FB939724D60EF3BBF05DA'
-               BlueprintName = 'MBProgressHUD'
+               BlueprintIdentifier = '3BF7974E5C27FB6495442A5A15A4DA44'
+               BlueprintName = 'Nimbus-WebController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMBProgressHUD.a'>
+               BuildableName = 'WebController.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

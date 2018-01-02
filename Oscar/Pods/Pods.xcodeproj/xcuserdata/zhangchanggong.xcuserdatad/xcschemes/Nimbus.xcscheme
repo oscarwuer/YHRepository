@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9B20190638C2B6A205B2B946'
-               BlueprintName = 'SVPullToRefresh'
+               BlueprintIdentifier = '46834970DCAC8CEDCF9A809893D26935'
+               BlueprintName = 'Nimbus'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSVPullToRefresh.a'>
+               BuildableName = 'libNimbus.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

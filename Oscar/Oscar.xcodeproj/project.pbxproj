@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F21994D273287C33CD908D5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEE29070A4A084D85FE1A1D /* libPods.a */; };
+		1FFC6E3E681569F1C0E19405 /* libPods-Oscar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D58C7F92E17DC92539352B7 /* libPods-Oscar.a */; };
 		771424621BFE246E007002B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424611BFE246E007002B4 /* main.m */; };
 		771424651BFE246E007002B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 771424641BFE246E007002B4 /* AppDelegate.m */; };
 		7714246D1BFE246E007002B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714246C1BFE246E007002B4 /* Assets.xcassets */; };
@@ -33,7 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F8229856C519739EC80128D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		246B24A4C13ED8228E16D57E /* Pods-Oscar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oscar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Oscar/Pods-Oscar.debug.xcconfig"; sourceTree = "<group>"; };
+		3D58C7F92E17DC92539352B7 /* libPods-Oscar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Oscar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7714245D1BFE246E007002B4 /* Oscar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oscar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771424611BFE246E007002B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		771424631BFE246E007002B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,8 +81,7 @@
 		772BAE741CE2D61F004A9ADD /* DisplayLoopScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLoopScrollVC.m; sourceTree = "<group>"; };
 		77A64E021C19235B004A82F3 /* Oscar-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Oscar-PrefixHeader.pch"; sourceTree = "<group>"; };
 		77A64E051C192784004A82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		9FEE29070A4A084D85FE1A1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7F3DF175BA9D5F14D6BA7A /* Pods-Oscar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oscar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oscar/Pods-Oscar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,20 +89,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F21994D273287C33CD908D5 /* libPods.a in Frameworks */,
+				1FFC6E3E681569F1C0E19405 /* libPods-Oscar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24EACB031625B06756FFCE44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				246B24A4C13ED8228E16D57E /* Pods-Oscar.debug.xcconfig */,
+				BE7F3DF175BA9D5F14D6BA7A /* Pods-Oscar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		771424541BFE246E007002B4 = {
 			isa = PBXGroup;
 			children = (
 				7714245F1BFE246E007002B4 /* Oscar */,
 				7714245E1BFE246E007002B4 /* Products */,
-				D7E6F1DD009CD36EEE0DD0F8 /* Pods */,
-				A1A9A8D6AA44DBF8101296A5 /* Frameworks */,
+				24EACB031625B06756FFCE44 /* Pods */,
+				839BA9B3C2FB1DA00740B757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +129,6 @@
 				771424631BFE246E007002B4 /* AppDelegate.h */,
 				771424641BFE246E007002B4 /* AppDelegate.m */,
 				772BAE2C1CE2D16A004A9ADD /* Class */,
-				779E58EC1C195AE200092118 /* Resouces */,
 				771424601BFE246E007002B4 /* Supporting Files */,
 			);
 			path = Oscar;
@@ -319,44 +327,12 @@
 			path = LoopScrollView;
 			sourceTree = "<group>";
 		};
-		779E58EC1C195AE200092118 /* Resouces */ = {
+		839BA9B3C2FB1DA00740B757 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				779E58ED1C195AE200092118 /* Images */,
-			);
-			path = Resouces;
-			sourceTree = "<group>";
-		};
-		779E58ED1C195AE200092118 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				779E58EE1C195AE200092118 /* TableBar */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		779E58EE1C195AE200092118 /* TableBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableBar;
-			sourceTree = "<group>";
-		};
-		A1A9A8D6AA44DBF8101296A5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9FEE29070A4A084D85FE1A1D /* libPods.a */,
+				3D58C7F92E17DC92539352B7 /* libPods-Oscar.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7E6F1DD009CD36EEE0DD0F8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */,
-				2F8229856C519739EC80128D /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,12 +342,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7714248A1BFE246F007002B4 /* Build configuration list for PBXNativeTarget "Oscar" */;
 			buildPhases = (
-				01EA59A4D20C193AF792B8D0 /* Check Pods Manifest.lock */,
+				A3F6E4CB749FD34462A3B62A /* [CP] Check Pods Manifest.lock */,
 				771424591BFE246E007002B4 /* Sources */,
 				7714245A1BFE246E007002B4 /* Frameworks */,
 				7714245B1BFE246E007002B4 /* Resources */,
-				022CF4AEB69B91FF28FD9FAF /* Embed Pods Frameworks */,
-				29100E1BE7D8DF092277C720 /* Copy Pods Resources */,
+				695237992DDE3808E1C050E8 /* [CP] Embed Pods Frameworks */,
+				B9BFB95874B12796B29DB913 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,7 +369,6 @@
 				TargetAttributes = {
 					7714245C1BFE246E007002B4 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = MLHT46YYCF;
 					};
 				};
 			};
@@ -428,49 +403,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01EA59A4D20C193AF792B8D0 /* Check Pods Manifest.lock */ = {
+		695237992DDE3808E1C050E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oscar/Pods-Oscar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		022CF4AEB69B91FF28FD9FAF /* Embed Pods Frameworks */ = {
+		A3F6E4CB749FD34462A3B62A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oscar-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		29100E1BE7D8DF092277C720 /* Copy Pods Resources */ = {
+		B9BFB95874B12796B29DB913 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Oscar/Pods-Oscar-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/Nimbus/WebController.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Oscar/Pods-Oscar-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -590,26 +571,28 @@
 		};
 		7714248B1BFE246F007002B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C83DA41F36485FD7A008A427 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 246B24A4C13ED8228E16D57E /* Pods-Oscar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Oscar/Oscar-PrefixHeader.pch";
 				INFOPLIST_FILE = Oscar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.Oscar;
+				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.oscar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		7714248C1BFE246F007002B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F8229856C519739EC80128D /* Pods.release.xcconfig */;
+			baseConfigurationReference = BE7F3DF175BA9D5F14D6BA7A /* Pods-Oscar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Oscar/Oscar-PrefixHeader.pch";
 				INFOPLIST_FILE = Oscar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.Oscar;
+				PRODUCT_BUNDLE_IDENTIFIER = mtime.com.oscar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
