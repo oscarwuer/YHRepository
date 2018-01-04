@@ -9,5 +9,6 @@ pod 'SVPullToRefresh', '0.4.1'
 pod 'RDVTabBarController', '1.1.9'
 pod 'MBProgressHUD', '0.9.1'
 pod 'SDWebImage', '3.7.6'
+pod 'JSONModel', '1.7.0'
 
 end

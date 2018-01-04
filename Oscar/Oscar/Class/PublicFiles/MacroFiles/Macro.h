@@ -21,6 +21,20 @@
 /// tabbar height
 #define kTabbarHeight 49
 
+// iPhone X宏定义
+#define is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)]?CGSizeEqualToSize(CGSizeMake(1125, 2436),[[UIScreen mainScreen]currentMode].size):NO)
+
+// 颜色赋值
+#define kColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kColorFromRGBAlpha(rgbValue,alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphaValue]
+
+// 相关平方字体
+#define kFontTextBodySize(s) [UIFont fontWithName:@"Helvetica" size:s] //普通正文
+#define kFontTextBoldSize(s) [UIFont fontWithName:@"Helvetica-Bold" size:s] //加粗字体
+#define kFontTextPingFangSCRgularSize(s) [UIFont fontWithName:@"PingFangSC-Regular" size:s] //平方常字体
+#define kFontTextPingFangSCMediumSize(s) [UIFont fontWithName:@"PingFangSC-Medium" size:s] //平方粗字体
+#define kFontTextPingFangSCSemiboldSize(s) [UIFont fontWithName:@"PingFangSC-Semibold" size:s] //平方半黑体
+
 #pragma mark - 保护
 #define kObject_Is_Class(obj, className) ([obj isKindOfClass:[className class]])
 

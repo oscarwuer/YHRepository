@@ -16,5 +16,8 @@
 /// qiniu 接口
 #define kURL_Qiniu_hots @"http://7xp0ch.com1.z0.glb.clouddn.com/hots.json"
 
+// YHCollectionFlowLayout 主页数据请求
+#define kURL_Qinniu_flowLayout @"http://7xp0ch.com1.z0.glb.clouddn.com/flowLayout.json"
+
 
 #endif /* MacroUrls_h */

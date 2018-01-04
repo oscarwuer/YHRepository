@@ -11,14 +11,11 @@
 #import "NimbusSectionVC.h"
 #import "SVPullRefreshVC.h"
 #import "DisplayLoopScrollVC.h"
+#import "YHCollectionFlowLayoutVC.h"
 
 #import "YHSectionCellObject.h"
 
-#import "DisplayHttpModel.h"
-
 @interface DisplayListVC ()
-
-@property (nonatomic, strong) DisplayHttpModel *httpModel;
 
 @end
 
@@ -31,9 +28,6 @@
     
     /// 加载数据源
     [self configDatasources];
-    
-    /// 初始化请求类
-    self.httpModel = [DisplayHttpModel manager];
 }
 
 - (void)configDatasources
@@ -48,10 +42,6 @@
                                               ];
     [cellObjects addObject:sectionCellObject];
     
-    /// 打印HTTP请求
-    [cellObjects addObject:[self getLogHttpResquestCellObject]];
-    [cellObjects addObject:[self getSectionCellObject]];
-    
     /// Nimbu Section Page
     [cellObjects addObject:[self getNimbusSectionPageCellObject]];
     [cellObjects addObject:[self getSectionCellObject]];
@@ -62,6 +52,10 @@
     
     /// LoopScrollVC
     [cellObjects addObject:[self getLoopScrollViewCellObject]];
+    [cellObjects addObject:[self getSectionCellObject]];
+    
+    // CollectionFlowLayout
+    [cellObjects addObject:[self getYHCollectionFlowLayoutVCCellObject]];
     [cellObjects addObject:[self getSectionCellObject]];
     
     
@@ -79,35 +73,35 @@
 
 #pragma mark - cell list
 
-/// 打印HTTP请求
-- (YHTitleCellObject *)getLogHttpResquestCellObject {
-    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"1. 打印Http请求"];
-    cellObject.isHiddenSeparateLine = YES;
-    [self.actions attachToObject:cellObject navigationSelector:@selector(oneClick:)];
-    return cellObject;
-}
-
 /// Nimbu Section Page
 - (YHTitleCellObject *)getNimbusSectionPageCellObject {
-    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"2. Nimbus Section Page"];
+    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"1. Nimbus Section Page"];
     cellObject.isHiddenSeparateLine = YES;
-    [self.actions attachToObject:cellObject navigationSelector:@selector(twoClick:)];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(nimbusSectionClick:)];
     return cellObject;
 }
 
 /// SVPullToRefresh
 - (YHTitleCellObject *)getSVPullToRfreshCellObject {
-    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"3. SVPullToRefresh Page"];
+    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"2. SVPullToRefresh Page"];
     cellObject.isHiddenSeparateLine = YES;
-    [self.actions attachToObject:cellObject navigationSelector:@selector(threeClick:)];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(svPullToRefreshClick:)];
     return cellObject;
 }
 
 /// LoopScrollVC
 - (YHTitleCellObject *)getLoopScrollViewCellObject {
-    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"4. YHLoopScrollView Page"];
+    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"3. YHLoopScrollView Page"];
     cellObject.isHiddenSeparateLine = YES;
-    [self.actions attachToObject:cellObject navigationSelector:@selector(fourClick:)];
+    [self.actions attachToObject:cellObject navigationSelector:@selector(loopScrollVCClick:)];
+    return cellObject;
+}
+
+// YHCollectionFlowLayoutVC
+- (YHTitleCellObject *)getYHCollectionFlowLayoutVCCellObject {
+    YHTitleCellObject *cellObject = [YHTitleCellObject objectWithTitle:@"4. YHCollectionFlowLayoutVC Page"];
+    cellObject.isHiddenSeparateLine = YES;
+    [self.actions attachToObject:cellObject navigationSelector:@selector(flowLayoutVCClick:)];
     return cellObject;
 }
 
@@ -120,25 +114,24 @@
 }
 
 #pragma mark - click event
-- (void)oneClick:(id)sender {
-    [self.httpModel test_getRequest:kURL_Qiniu_hots
-                         completion:^(YHHttpResponse *response) {
-                             NSLog(@"%@",response.responseDic);
-                         }];
-}
 
-- (void)twoClick:(id)sender {
+- (void)nimbusSectionClick:(id)sender {
     NimbusSectionVC *vc = [[NimbusSectionVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)threeClick:(id)sender {
+- (void)svPullToRefreshClick:(id)sender {
     SVPullRefreshVC *vc = [[SVPullRefreshVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)fourClick:(id)sender {
+- (void)loopScrollVCClick:(id)sender {
     DisplayLoopScrollVC *vc = [[DisplayLoopScrollVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)flowLayoutVCClick:(id)sender {
+    YHCollectionFlowLayoutVC *vc = [[YHCollectionFlowLayoutVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

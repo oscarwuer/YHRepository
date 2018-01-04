@@ -24,6 +24,9 @@
 /// 自动布局 masonry
 #import <Masonry.h>
 
+/// 图片
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #pragma mark - category
 #import "UIView+Frame.h"
 #import "Colours.h"
