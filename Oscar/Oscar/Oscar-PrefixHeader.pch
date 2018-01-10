@@ -16,6 +16,11 @@
 #pragma MARK - URL
 #import "MacroUrls.h"
 
+#pragma mark - category
+#import "UIView+Frame.h"
+#import "Colours.h"
+#import "UIViewController+NavigationButton.h"
+
 #pragma mark - pods
 /// Nimbus 相关
 #import <NimbusModels.h>
@@ -27,10 +32,7 @@
 /// 图片
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#pragma mark - category
-#import "UIView+Frame.h"
-#import "Colours.h"
-#import "UIViewController+NavigationButton.h"
-
+// POP动画
+#import <pop.h>
 
 #endif /* Oscar_PrefixHeader_pch */
